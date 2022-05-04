@@ -1,8 +1,6 @@
-#### 
-#### !/usr/bin/env /bin/bash
-#### 
-#### export PATH=/bin:/usr/bin:$PATH
-#### 
+#!/usr/bin/env /bin/bash
+
+export PATH=/bin:/usr/bin:$PATH
 
 # Source directory
 SD=$HOME/home
@@ -11,7 +9,7 @@ SD=$HOME/home
 SF="$SD/.alias $SD/.env $SD/.paths"
 
 # Working directory
-WD=/tmp
+WD=$HOME/.tmptmp
 
 # File name
 FN=".bashrc"
@@ -40,5 +38,11 @@ BC=$(($TFL-$BB))
 # Move dotfiles to home directory
 for file in $SF; do cp -f $file $HOME; done
 
+# Create temp directory
+mkdir -p $WD
+
 # Build source components into new target file
 head -n$TC $TF > $WF && cat $IF >> $WF && tail -n$BC $TF >> $WF && mv $WF $TF
+
+# Cleanup
+rm -rf $SD $WD 
