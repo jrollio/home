@@ -45,4 +45,4 @@ mkdir -p $WD
 head -n$TC $TF > $WF && cat $IF >> $WF && tail -n$BC $TF >> $WF && mv $WF $TF
 
 # Cleanup
-#rm -rf $SD $WD 
+rm -rf $SD $WD
