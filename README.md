@@ -4,10 +4,10 @@ A repo of dotfiles for tailoring vs code dev shell environments to suit personal
 
 ## Configuration
 To use the automation in VS Code, configure VS Code settings.json as:
-    "dotfiles.repository": "jonathanroll/home",
-    "dotfiles.targetPath": "~/home",
-    "remote.containers.dotfiles.installCommand": "install.sh",
-    "remote.containers.dotfiles.repository": "jonathanroll/home",
+    "dotfiles.repository": "jonathanroll/home"
+    "dotfiles.targetPath": "~/home"
+    "remote.containers.dotfiles.installCommand": "install.sh"
+    "remote.containers.dotfiles.repository": "jonathanroll/home"
     "remote.containers.dotfiles.targetPath": "~/home"
 
 ### .alias
