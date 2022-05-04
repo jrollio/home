@@ -1,5 +1,8 @@
-#!/usr/bin/env /bin/bash
-export PATH=/bin:/usr/bin:$PATH
+#### 
+#### !/usr/bin/env /bin/bash
+#### 
+#### export PATH=/bin:/usr/bin:$PATH
+#### 
 
 # Source directory
 SD=$HOME/home
