@@ -21,7 +21,7 @@ WF=$WD/$FN.tmp
 TF=$HOME/$FN
 
 # File to be inserted
-IF=$WD/modf.txt
+IF=$SD/modf.txt
 
 # Target file line count
 TFL=`wc -l $TF | awk -F" " '{ print $1 }'`
@@ -45,4 +45,4 @@ mkdir -p $WD
 head -n$TC $TF > $WF && cat $IF >> $WF && tail -n$BC $TF >> $WF && mv $WF $TF
 
 # Cleanup
-rm -rf $SD $WD 
+#rm -rf $SD $WD 
