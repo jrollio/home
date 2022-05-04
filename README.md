@@ -18,4 +18,4 @@ Implements the customizations in home directory of VS Code Remote Containers (an
 2. Inserts modf.txt stanza into .bashrc
  
 ## modf.txt
-The excerpt of code that #install.sh# inserts into #.bashrc#
+The excerpt of code that install.sh inserts into .bashrc
