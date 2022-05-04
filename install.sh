@@ -46,3 +46,7 @@ head -n$TC $TF > $WF && cat $IF >> $WF && tail -n$BC $TF >> $WF && mv $WF $TF
 
 # Cleanup
 rm -rf $SD $WD
+
+# Manual workaround until automation works
+# chmod u+x $HOME/home/install.sh
+# $HOME/home/install.sh
