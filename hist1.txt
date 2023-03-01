@@ -1,0 +1,283 @@
+    1  cd
+    2  lr
+    3  ls
+    4  chmod u+x home/install.sh; home/install.sh
+    5  exec /bin/bash
+    6  lr
+    7  vi .bashrc
+    8  vi --help
+    9  unminimize
+   10  sudo unminimize
+   11  vi ~/.bashrc
+   12  sudo apt update vim
+   13  sudo apt install vim
+   14  sudo apt upgrade
+   15  vi .bashrc
+   16  traceroute
+   17  git add remote ohome https://github.com/jonathanroll/home
+   18  cd /workspaces/jn
+   19  cd
+   20  lr
+   21  git clone https://github.com/jonathanroll/home
+   22  lr
+   23  chmod u+x home/install.sh ; home/install.sh; exec /bin/bash
+   24  lr
+   25  echo $PS1
+   26  cd /workspaces/
+   27  cd -
+   28  git clone https://github.com/jonathanroll/home
+   29  cd home
+   30  lr
+   31  view .bashrc 
+   32  grep PS1 ./.*
+   33  vi .bashrc 
+   34  cd ../
+   35  cd
+   36  chmod u+x home/install.sh ; home/install.sh; exec /bin/bash
+   37  view .bashrc 
+   38  git clone https://github.com/jonathanroll/home
+   39  cp home/.bashrc .
+   40  exec /bin/bash
+   41  ls home
+   42  ll
+   43  ll home
+   44  vi home/install.sh 
+   45  vi home/modf.txt 
+   46  cd home
+   47  grep PS1 ./.*
+   48  view install.sh 
+   49  grep "local userpart" ~/.bashrc
+   50  man egrep
+   51  man grep
+   52  man sed
+   53  man awk
+   54  sudo apt install grep
+   55  grep -l "local userpart=" .bashrc
+   56  grep -n "local userpart=" .bashrc
+   57  help grep
+   58  info grep
+   59  man grep
+   60  grep -r "local userpart=.*$" .bashrc
+   61  man regexp
+   62  man regex
+   63  man -s7 regex
+   64  man -s3 reged
+   65  man -s3 regex
+   66  grep -r "/local userpart=.*$/m" .bashrc
+   67  egrep -r "/local userpart=.*$/m" .bashrc
+   68  man grep
+   69  egrep '/userpart/m' .bashrc 
+   70  grep -e '/userpart/m' .bashrc 
+   71  grep -E '/userpart/m' .bashrc 
+   72  grep -E 'userpart'm .bashrc 
+   73  man grep
+   74  sed 's/\\(.)/\1/g' .bashrc 
+   75  sed 's/\\(.)/$1/g' .bashrc 
+   76  sed 's/\\\n//g' .bashrc 
+   77  sed 's/\\n//g' .bashrc 
+   78  sed 's/\\\n//g' .bashrc 
+   79  sed 's/\\\n//' .bashrc 
+   80  sed 's/\\\\n//' .bashrc 
+   81  sed 's/\\$//' .bashrc 
+   82  sed 's/\\$//' .bashrc | grep 'local userpart'
+   83  sed 's/\\$/ /' .bashrc | grep 'local userpart'
+   84  sed 's/\\n/ /' .bashrc | grep 'local userpart'
+   85  sed 's/\\\n/ /' .bashrc | grep 'local userpart'
+   86  sed 's/\$/ /' .bashrc | grep 'local userpart'
+   87  sed 's/\$//' .bashrc | grep 'local userpart'
+   88  sed 's/\\$//' .bashrc | grep 'local userpart'
+   89  perl 'print $_' .bashrc
+   90  perl "print $_" .bashrc
+   91  man perl
+   92  perl -e 'print $_ .bashrc
+   93  perl -e 'print $_' .bashrc
+   94  perl -h
+   95  perl -E 'print $_' .bashrc
+   96  perl -E 'print $_' < .bashrc
+   97  perl -E "print $_"
+   98  perl -E "print hello"h
+   99  perl -E 'print "hello"'
+  100  perl -E 'print "hello" $_'
+  101  perl -E 'print $_'
+  102  perl -E 'print $_' -
+  103  cat .bashrc | perl -E 'print $_'
+  104  cat .bashrc | perl -E 'print $_' -
+  105  perl
+  106  python
+  107  python -h
+  108  perl -e 'print "Hello world\n"'
+  109  perl -e 'print _'
+  110  perl -e 'print $_'
+  111  perl -lne 'END { print $. }' .bashrc
+  112  perl -lne 'END { print $_ }' .bashrc
+  113  perl -lne 'END { print $ }' .bashrc
+  114  perl -lne 'END { print _ }' .bashrc
+  115  perl -lne 'print _ ' .bashrc
+  116  perl -lne 'print $_ ' .bashrc
+  117  perl -lne '$line =~ s/\\(.)/$1/g; print $line' .bashrc
+  118  perl -lne '$line =~  /\\(.)/$1/g; print $line' .bashrc
+  119  perl -lne '$line =~ /\\(.)/$1/g; print $line' .bashrc
+  120  perl -lne '$line =~ s/\\(.)/$1/g; print $line' .bashrc
+  121  perl -lne '$line =~ s/\\\n//g; print $line' .bashrc
+  122  perl -lne '$_ =~ s/\\\n//g; print $_' .bashrc
+  123  perl -lne '$_ =~ s/\\$//g; print $_' .bashrc
+  124  perl -lne '$_ =~ s/\\$//m; print $_' .bashrc
+  125  perl -lne 'print /$_/m' .bashrc
+  126  perl -lne 'print $/_/m' .bashrc
+  127  perl -lne 'print $_m' .bashrc
+  128  perl -lne 'print $_' .bashrc
+  129  perl -lne '$_ =~ s/\\$//s; print $_' .bashrc
+  130  perl -nE 'say /local userpart/s' .bashrc
+  131  perl -nE 'say /userpart=/s' .bashrc
+  132  perl -n 'say /userpart=/s' .bashrc
+  133  perl -e 'say /userpart=/s' .bashrc
+  134  perl -le 'say /userpart=/s' .bashrc
+  135  perl -lane 'say /userpart=/s' .bashrc
+  136  perl -lane 'say /userpart\=/s' .bashrc
+  137  perl -lane 'say /userpart/s' .bashrc
+  138  perl -lane 'say /userpart/m' .bashrc
+  139  perl -lne 'say /userpart/m' .bashrc
+  140  perl -lne 'say $_ if /userpart/m' .bashrc
+  141  perl -lne 'printf $_ if /userpart/m' .bashrc
+  142  clear
+  143  perl -lne 'printf $_ if /userpart/m' .bashrc
+  144  perl -lne 'printf $_ if /local userpart/m' .bashrc
+  145  perl -alne 'printf $_ if /local userpart/m' .bashrc
+  146  perl -alne 'printf $_ if /local userpart/sm' .bashrc
+  147  perl -alnE 'printf $_ if /local userpart/sm' .bashrc
+  148  perl -alnE 'printf $. if /local userpart/sm' .bashrc
+  149  perl -alnE 'printf $& if /local userpart/sm' .bashrc
+  150  perl -alnE 'say /local userpart/sm' .bashrc
+  151  perl -alnE 'say if /local userpart/sm' .bashrc
+  152  perl -alnE 'say $* if /local userpart/sm' .bashrc
+  153  perl -alnE 'printf $* if /local userpart/sm' .bashrc
+  154  perl -alnE 'printf $_ if /local userpart/sm' .bashrc
+  155  perl -alnE 'print if /local userpart/sm' .bashrc
+  156  perl -alnE 'BEGIN {undef $\} s/\n//g; print if /local userpart/sm' .bashrc
+  157  perl -alnE 'BEGIN {undef $\} s/\n//g;  s/^\w+(local userpart.*)/\n$1/g; print' .bashrc
+  158  perl -alnE 'BEGIN {undef $\}  s/^\w+(local userpart.*)/\n$1/g; s/\n//g;  print' .bashrc
+  159  perl -alnE 'BEGIN {undef $\}  s/^\w+(local userpart.*)/\n$1/g; s/\n//g;  print if /local userpart/' .bashrc
+  160  perl -alnE 'BEGIN {undef $\}  s/(local userpart.*)/\n$1/g; s/\n//g;  print if /local userpart/' .bashrc
+  161  perl -alnE 'BEGIN {undef $\} s/\n//g;  s/^\w+(local userpart.*)/\n$1/g; printif /userpart/' .bashrc
+  162  perl -alnE 'BEGIN {undef $\} s/\n//g;  s/^\w+(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  163  perl -alnE 'BEGIN {undef $\} s/\n//g;  s/(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  164  perl -alnE 'BEGIN {undef $\} s/\n//mg;  s/(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  165  perl -alnE 'BEGIN {usdef $\} s/\n//mg;  s/(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  166  perl -alnE 'BEGIN {usdef $\} s/\n//m;  s/(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  167  perl -alnE iBef $\} s/\n//m;  s/(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  168  perl -alnE 'BEGIN {undef $\} s/\n//m;  s/(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  169  perl -alnE 'BEGIN {undef $\} s/\n//ms;  s/(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  170  perl -alnE 'BEGIN {undef $\} s/\\\n//ms;  s/(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  171  perl -alnE 'BEGIN {undef $\} s/\\$//ms;  s/(local userpart.*)/\n$1/g; print if /userpart/' .bashrc
+  172  perl -alnE 'BEGIN {undef $\} s/\\$//ms;  print if /userpart/' .bashrc
+  173  echo $PS1
+  174  . .bashrc
+  175  echo $PS1
+  176  echo "\h"
+  177  echo -n \h
+  178  echo -n "\h"
+  179  echo $XIT
+  180  . .bashrc
+  181  lr
+  182  echo $PS1
+  183  . .bashrc
+  184  echo $PS1
+  185  . .bashrc
+  186  cd /workspaces/jn
+  187  . ~/.bashrc
+  188  echo ~
+  189  . ~/home/.bashrc
+  190  cd /
+  191  cd
+  192  ls
+  193  vi .bashrc 
+  194  grep -n 'export XIT.*$' .bashrc
+  195  grep -n -E 'export XIT.*$' .bashrc
+  196  grep -n -e -E 'export XIT.*$' .bashrc
+  197  grep -n -E 'export XIT.*$' .bashrc
+  198  grep -n -E -e 'export XIT.*$' .bashrc
+  199  grep 'export XIT'$ .bashrc
+  200  grep "export XIT"$ .bashrc
+  201  grep -e "export XIT"$ .bashrc
+  202  grep -E -e "export XIT"$ .bashrc
+  203  grep -P -e '/export XIT.*/m'
+  204  grep -P -e '/export XIT.*/m' .bash
+  205  grep -P -e '/export XIT.*/m' .bashrc
+  206  grep -P '/export XIT.*/m' .bashrc
+  207  grep -P '/export XIT.*/s' .bashrc
+  208  perl
+  209  perl -
+  210  man perl
+  211  perl perlrequick
+  212  man perl
+  213  perldoc
+  214  history 1000
+  215  cd home
+  216  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -E '^[^#].*local\ userpart' 
+  217  git remote -v
+  218  grep $(sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -E '^[^#].*local\ userpart') .bashrc
+  219  grep $(sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -lE '^[^#].*local\ userpart') .bashrc
+  220  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -lE '^[^#].*local\ userpart')
+  221  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -lE '^[^#].*local\ userpart'
+  222  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -E '^[^#].*local\ userpart'
+  223  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart'
+  224  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nqE '^[^#].*local\ userpart'
+  225  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nsE '^[^#].*local\ userpart'
+  226  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -q -n -E '^[^#].*local\ userpart'
+  227  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -s -n -E '^[^#].*local\ userpart'
+  228  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -s -l -E '^[^#].*local\ userpart'
+  229  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -l -n -E '^[^#].*local\ userpart'
+  230  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -n -E '^[^#].*local\ userpart'
+  231  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart'
+  232  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | awk { print $1 }
+  233  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | awk '{ print $1 }'
+  234  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | awk '{ print $0 }'
+  235  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | awk '{ print }'
+  236  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | awk '{ print 1}'
+  237  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | awk { print 1}
+  238  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | awk "{ print 1}"
+  239  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | awk "{ print $1}"
+  240  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | awk "{ print $0}"
+  241  man cut
+  242  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | cut -f1
+  243  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | cut -f0
+  244  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' | cut -f2
+  245  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nz -E '^[^#].*local\ userpart' 
+  246  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' 
+  247  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -f1
+  248  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d: 
+  249  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d":"
+  250  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d":" 1
+  251  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -f ":" 1
+  252  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d ":" 1
+  253  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d ":" -f1
+  254  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d":" -f1
+  255  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1
+  256  sed ':a; N; $!ba; s/\\\n//g' .bashrc | sed '0,/[^#].*local\ userpart/'
+  257  sed ':a; N; $!ba; s/\\\n//g' .bashrc | sed '0,/[^#].*local\ userpart/p'
+  258  sed ':a; N; $!ba; s/\\\n//g' .bashrc | sed '0,/[^#].*local\ userpart/!p'
+  259  sed ':a; N; $!ba; s/\\\n//g' .bashrc | sed '/[^#].*local\ userpart/p'
+  260  sed ':a; N; $!ba; s/\\\n//g' .bashrc | sed -E '/[^#].*local\ userpart/p'
+  261  sed ':a; N; $!ba; s/\\\n//g' .bashrc | sed -e '/[^#].*local\ userpart/p'
+  262  sed ':a; N; $!ba; s/\\\n//g' .bashrc | sed -e '/[^#].*local\ userpart/!p'
+  263  sed ':a; N; $!ba; s/\\\n//g' .bashrc | sed '/[^#].*local\ userpart/p'
+  264  history 
+  265  sed ':a; N; $!ba; s/\\\n//g' .bashrc | sed '/[^#].*local\ userpart/p'
+  266  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep '/[^#].*local\ userpart/'
+  267  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep '[^#].*local\ userpart'
+  268  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1
+  269  sed '123p' .bashrc 
+  270  sed '123' .bashrc 
+  271  sed -s '123' .bashrc 
+  272  sed -n '123p' .bashrc 
+  273  sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1
+  274  sed -n $(sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1) .bashrc
+  275  sed -n `sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1` .bashrc
+  276  sed -n "$(sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1)" .bashrc
+  277  sed -n "$(sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1)p" .bashrc
+  278  sed -n "$(sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1)p" $(sed ':a; N; $!ba; s/\\\n//g' .bashrc)
+  279  sed -n "$(sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1)p" "$(sed ':a; N; $!ba; s/\\\n//g' .bashrc)"
+  280  sed -n "$(sed ':a; N; $!ba; s/\\\n//g' .bashrc | grep -nE '^[^#].*local\ userpart' | cut -d':' -f1)p" .bashrc
+  281  sed -n "$(grep -nE '^[^#].*local\ userpart' | cut -d':' -f1)p" .brc
+  282  sed -n "$(grep -nE '^[^#].*local\ userpart' .brc | cut -d':' -f1)p" .brc
+  283  history > hist1.txt

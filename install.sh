@@ -11,7 +11,7 @@ SF="$SD/.alias $SD/.env $SD/.paths"
 # Working directory
 WD=$HOME/.tmptmp
 
-# File name
+# Filename
 FN=".bashrc"
 
 # Working file
@@ -42,7 +42,12 @@ for file in $SF; do cp -f $file $HOME; done
 mkdir -p $WD
 
 # Build source components into new target file
-head -n$TC $TF > $WF && cat $IF >> $WF && tail -n$BC $TF >> $WF && mv $WF $TF
+head -n$TC $TF > $WF && cat $IF >> $WF && tail -n$BC $TF >> $WF
+
+sed ':a; N; $!ba; s/\\\n//g' $WF > $WF
+
+
+mv $WF $TF
 
 # Cleanup
 rm -rf $SD $WD
