@@ -19,7 +19,7 @@ for file in $SF; do
         if [ "$(diff -q $HOME/$file $SD/$file)" ]; then
             echo "Appending contents of $SD/$file to $HOME/$file"
             echo "########################################################" >> $HOME/$file
-            echo "#     Content appended from $SD/$file on $(date)" >> $HOME/$file
+            echo "# Content appended from $SD/$file on $(date)" >> $HOME/$file
             echo "########################################################" >> $HOME/$file
             cat $SD/$file >> $HOME/$file
             echo "############### End of Append ######################" >> $HOME/$file
@@ -41,11 +41,8 @@ IFS=$'\t'; while read -r recid targetFile deltaFile upperMarker lowerMarker; do
     TF=$HOME/$targetFile
     IF=$SD/$deltaFile
 
-    wc $IF $TF /tmp/home/$targetFile $targetFile
-
     # Remove escaped newlines
     sed -i ':a; N; $!ba; s/\\\n//g' $TF
-    #sed ':a; N; $!ba; s/\\\n//g' $TF > $WF
 
     # Target file line count
     TFL=`wc -l $TF | awk -F" " '{ print $1 }'`
@@ -78,30 +75,15 @@ IFS=$'\t'; while read -r recid targetFile deltaFile upperMarker lowerMarker; do
     # Build source components into new target file
 	head -n$headBoundary $TF > $WF && cat $IF >> $WF && tail -n$tailBoundary $TF >> $WF
 
-    wc $IF $TF $WF
-
     # Replace target with updated working file
     mv $WF $TF
 
 done < $dTbl
 
-# Move dotfiles to home directory
-#for file in $SF; do
-#	/bin/ls -alF $file
-#	cp -f $file $HOME
-#done
-
 # Cleanup
 rm -rf $SD $WD
 
 # Manual workaround until automation works
-# chmod u+x $HOME/home/install.sh
-# $HOME/home/install.sh
+# cd; chmod u+x home/install.sh ; home/install.sh; exec /bin/bash
 
-# -- trial and error ---
-# usrPartLn=$(grep -nE '^[^#]\s+local\ userpart\=' ${WF} | cut -d':' -f1)
-# tgtLnNm=$(grep -nE '^[^#].*local\ userpart' ${WF} | cut -d':' -f1)
-# bashStart="$(grep -n '__bash_prompt() {' ${WF} | cut -d':' -f 1)"
-# bashEnd="$(grep -ne '^__bash_prompt$' ${WF} | cut -d':' -f 1)"
-#head -n$insertBeg $WF > $TF && cat $UP >> $TF && tail -n$insertEnd $WF >> $TF
-# -- trial and error ---
+
