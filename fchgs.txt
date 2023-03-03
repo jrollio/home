@@ -1,0 +1,2 @@
+01	.bashrc	01-.bashrc.txt	# Alias definitions.	# enable programmable completion features
+02	.bashrc	02-.bashrc.txt	^[^#]\s+local\ userpart\=	^[^#]\s+local\ userpart\='
