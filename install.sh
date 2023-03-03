@@ -1,6 +1,6 @@
 #!/usr/bin/env /bin/bash
 
-set -avx
+set -a
 
 export PATH=/bin:/usr/bin:$PATH
 
