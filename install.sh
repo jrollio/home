@@ -8,7 +8,7 @@ export PATH=/bin:/usr/bin:$PATH
 SD=$HOME/home
 
 # Source files
-SF=".alias .env .paths"
+SF=".alias .bashrc .env .paths"
 
 # Table of changes
 dTbl=$SD/fchgs.txt
