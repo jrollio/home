@@ -41,8 +41,10 @@ IFS=$'\t'; while read -r recid targetFile deltaFile upperMarker lowerMarker; do
     TF=$HOME/$targetFile
     IF=$SD/$deltaFile
 
-    # Remove escaped newlines
-    sed -i ':a; N; $!ba; s/\\\n//g' $TF
+	[[ ! -r $TF ]] && continue
+
+	# Remove escaped newlines
+	sed -i ':a; N; $!ba; s/\\\n//g' $TF
 
     # Target file line count
     TFL=`wc -l $TF | awk -F" " '{ print $1 }'`
